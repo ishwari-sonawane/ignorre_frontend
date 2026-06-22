@@ -439,13 +439,13 @@ const cardsData = [
   return (
     <>
 
-<div className="relative min-h-screen w-full overflow-x-hidden bg-[#E3E9FF] Gfont abc">
-  <div className="max-w-[1600px] mx-auto w-full px-4 sm:px-6 lg:px-8">
+<div className="relative min-h-0 lg:min-h-screen w-full overflow-x-hidden bg-[#E3E9FF] Gfont abc">
+  <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
 
     {/* Ternary layout */}
     {isMobile ? (
       /* ================= MOBILE VIEW ================= */
-      <div className="slide-up flex flex-col items-start justify-center pt-16 pb-12">
+      <div className="slide-up flex flex-col items-center justify-center pt-16 pb-12">
 
         {/* Rating + badges */}
         <div className="flex mt-4 space-x-2">
@@ -652,7 +652,7 @@ const cardsData = [
       {/* Second Page */}
 
   <div className="w-full bg-[#E3E9FF] Gfont abc overflow-x-hidden">
-  <div className="max-w-[1600px] mx-auto w-full px-4 sm:px-6 lg:px-8">
+  <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
 
     {isMobile ? (
       /* ========================== MOBILE VIEW ============================ */
@@ -761,18 +761,19 @@ const cardsData = [
         </div>
 
 
-         ) : isTablet ? (
+          ) : isTablet ? (
       /* ========================== TABLET VIEW ============================ */
-      <div className="flex flex-col py-16">
+      <div className="flex flex-col md:flex-row items-start justify-between py-12">
 
         {/* LEFT */}
-        <div className="w-full">
-          <div className="flex flex-row gap-2 text-[#5B61C0] text-[20px] font-semibold">
-            <IoSettingsOutline size={25} />
+        <div className="w-full md:w-[35%] flex flex-col justify-center">
+
+          <div className="flex flex-row items-center gap-2 text-[#5B61C0] text-[18px] font-semibold">
+            <IoSettingsOutline size={22} />
             <p>Features</p>
           </div>
 
-          <div className="mt-10 text-[18px] text-[#252E3D]">
+          <div className="mt-8 text-[16px] text-[#252E3D]">
             <p>
               Experience how ignorre.ai brings together
               <br />
@@ -783,25 +784,26 @@ const cardsData = [
           </div>
 
           <div
-            className="w-full max-w-[420px] h-auto p-3 mt-10 bg-white/10 backdrop-blur-md rounded-lg shadow-[0_0_25px_rgba(0,0,0,0.3)]"
+            className="w-full max-w-[360px] h-[320px] p-4 mt-12 bg-white/10 backdrop-blur-md rounded-lg shadow-[0_0_25px_rgba(0,0,0,0.3)]"
             style={{
               background:
-                "radial-gradient(circle, rgba(195,210,255,0.9) 0%, rgba(245,245,255,1) 60%)",
+                "radial-gradient(circle at center, rgba(195,210,255,0.9) 0%, rgba(245,245,255,1) 60%)",
             }}
           >
             <img src={aibussiness} alt="" />
-            <h1 className="text-[26px] font-semibold mb-5 mt-5 text-[#312C85]">
+            <h1 className="text-[22px] font-semibold mb-4 mt-4 text-[#312C85]">
               Developer APIs
             </h1>
-            <p className="text-[15px] text-[#252E3D]">
-              Integrate AI quickly…
+            <p className="text-[14px] text-[#252E3D]">
+              Integrate AI quickly using OpenAI-compatible APIs.
             </p>
           </div>
         </div>
 
         {/* RIGHT */}
-        <div className="w-full mt-14 flex flex-col">
-          <div className="font-semibold text-[34px] text-[#312C85]">
+        <div className="w-full md:w-[62%] mt-10 md:mt-0">
+
+          <div className="font-semibold text-[28px] text-[#312C85] md:mb-41 lg:mb-25">
             <h1>
               Unlock Powerful AI Capabilities for
               <br />
@@ -809,61 +811,83 @@ const cardsData = [
             </h1>
           </div>
 
-          {/* Box 1 */}
-          <div className="w-100 h-100 bg-white/10 backdrop-blur-md rounded-lg p-3 mt-10 shadow-[0_0_25px_rgba(0,0,0,0.3)] pt-5"
-            style={{ background: "radial-gradient(circle at center, rgba(200,210,255,0.9) 0%, rgba(245,245,255,1) 60%)" }}>
-            <img src={aichat} alt="" />
-            <h1 className="text-[26px] font-semibold mb-5 mt-5 text-[#312C85]">AI Chat</h1>
-            <p className="text-[15px] text-[#252E3D]">
-              Chat naturally with powerful AI models for work, learning, and problem-solving.
-            </p>
+          {/* Row 1 */}
+          <div className="grid grid-cols-2 gap-5 mt-10">
+            <div
+              className="w-full h-80 bg-white/10 backdrop-blur-md rounded-lg p-4 shadow-[0_0_25px_rgba(0,0,0,0.3)]"
+              style={{
+                background: "radial-gradient(circle at center, rgba(200,210,255,0.9) 0%, rgba(245,245,255,1) 60%)",
+              }}
+            >
+              <img src={aichat} alt="" />
+              <h1 className="text-[22px] font-semibold mb-3 mt-4 text-[#312C85]">AI Chat</h1>
+              <p className="text-[14px] text-[#252E3D]">
+                Chat naturally with powerful AI models for work, learning, and problem-solving.
+              </p>
+            </div>
+            <div className="w-full h-80 bg-white/10 backdrop-blur-md rounded-lg p-4 shadow-[0_0_25px_rgba(0,0,0,0.3)]"
+              style={{
+                background: "radial-gradient(circle at center, rgba(195,210,255,0.9) 0%, rgba(245,245,255,1) 60%)",
+              }}>
+              <img src={sdh} alt="" />
+              <h1 className="text-[22px] font-semibold mb-3 mt-4 text-[#312C85]">Model Comparison</h1>
+              <p className="text-[14px] text-[#252E3D]">
+                Compare models by quality, speed, and cost to choose the best fit.
+              </p>
+            </div>
           </div>
 
-          {/* Box 2 */}
-          <div className="w-100 h-100 bg-white/10 backdrop-blur-md rounded-lg p-3 mt-10 shadow-[0_0_25px_rgba(0,0,0,0.3)] pt-5"
-            style={{ background: "radial-gradient(circle at center, rgba(195,210,255,0.9) 0%, rgba(245,245,255,1) 60%)" }}>
-            <img src={sdh} alt="" />
-            <h1 className="text-[26px] font-semibold mb-5 mt-5 text-[#312C85]">Model Comparison</h1>
-            <p className="text-[15px] text-[#252E3D]">
-              Compare models by quality, speed, and cost to choose the best fit.
-            </p>
+          {/* Row 2 */}
+          <div className="grid grid-cols-2 gap-5 mt-8">
+            <div className="w-full h-80 bg-white/10 backdrop-blur-md rounded-lg p-4 shadow-[0_0_25px_rgba(0,0,0,0.3)]"
+              style={{
+                background: "radial-gradient(circle at center, rgba(195,210,255,0.9) 0%, rgba(245,245,255,1) 60%)",
+              }}>
+              <img src={aidetection} alt="" />
+              <h1 className="text-[22px] font-semibold mb-3 mt-4 text-[#312C85]">AI Playground</h1>
+              <p className="text-[14px] text-[#252E3D]">
+                Test prompts, tune models, and experiment safely before deploying.
+              </p>
+            </div>
+            <div className="w-full h-80 bg-white/10 backdrop-blur-md rounded-lg p-4 shadow-[0_0_25px_rgba(0,0,0,0.3)]"
+              style={{
+                background: "radial-gradient(circle at center, rgba(195,210,255,0.9) 0%, rgba(245,245,255,1) 60%)",
+              }}>
+              <img src={ignorre} alt="" />
+              <h1 className="text-[22px] font-semibold mb-3 mt-4 text-[#312C85]">Ignorre Search</h1>
+              <p className="text-[14px] text-[#252E3D]">
+                Get real-time, web-aware answers with accurate sources in seconds.
+              </p>
+            </div>
           </div>
 
-          {/* Box 3 */}
-          <div className="w-100 h-100 bg-white/10 backdrop-blur-md rounded-lg p-3 mt-8 shadow-[0_0_25px_rgba(0,0,0,0.3)]"
-            style={{ background: "radial-gradient(circle at center, rgba(195,210,255,0.9) 0%, rgba(245,245,255,1) 60%)" }}>
-            <img src={aidetection} alt="" />
-            <h1 className="text-[26px] font-semibold mb-5 mt-5 text-[#312C85]">AI Playground</h1>
-            <p className="text-[15px] text-[#252E3D]">
-              Test prompts, tune models, and experiment safely before deploying.
-            </p>
-          </div>
-
-          {/* Box 4 */}
-          <div className="w-100 h-100 bg-white/10 backdrop-blur-md rounded-lg p-3 mt-8 shadow-[0_0_25px_rgba(0,0,0,0.3)]"
-            style={{ background: "radial-gradient(circle at center, rgba(195,210,255,0.9) 0%, rgba(245,245,255,1) 60%)" }}>
-            <img src={ignorre} alt="" />
-            <h1 className="text-[26px] font-semibold mb-5 mt-5 text-[#312C85]">Ignorre Search</h1>
-            <p className="text-[15px] text-[#252E3D]">
-              Get real-time, web-aware answers with accurate sources in seconds.
-            </p>
-          </div>
-
-          {/* Box 5 */}
-          <div className="w-100 h-100 bg-white/10 backdrop-blur-md rounded-lg mt-10 shadow-[0_0_25px_rgba(0,0,0,0.3)] relative">
-            <img src={exploremore} alt="" />
-            <div className="flex flex-col absolute bottom-7 right-2 gap-3 group cursor-pointer">
-              <a href="/feature" className="group inline-block">
-                <div className="flex items-center">
-                  <p className="text-[18px] text-[#312C85] font-sans font-semibold">
-                    Explore More
-                  </p>
-                  <MdOutlineArrowOutward size={20}
-                    className="mt-1 ml-1 transform transition-transform duration-300 group-hover:rotate-45 cursor-pointer text-[#312C85]"
-                  />
-                </div>
-              </a>
-              <div className="w-[130px] h-[1.5px] bg-[#312C85]"></div>
+          {/* Row 3 */}
+          <div className="grid grid-cols-2 gap-5 mt-8">
+            <div className="w-full h-80 bg-white/10 backdrop-blur-md rounded-lg p-4 shadow-[0_0_25px_rgba(0,0,0,0.3)]"
+              style={{
+                background: "radial-gradient(circle at center, rgba(195,210,255,0.9) 0%, rgba(245,245,255,1) 60%)",
+              }}>
+              <img src={cg} alt="" />
+              <h1 className="text-[22px] font-semibold mb-3 mt-4 text-[#312C85]">AI Agents</h1>
+              <p className="text-[14px] text-[#252E3D]">
+                Build autonomous agents that plan, reason, and execute tasks for you.
+              </p>
+            </div>
+            <div className="w-full h-80 bg-white/10 backdrop-blur-md rounded-lg p-4 shadow-[0_0_25px_rgba(0,0,0,0.3)] relative">
+              <img src={exploremore} alt="" />
+              <div className="flex flex-col absolute bottom-6 right-3 gap-2 group cursor-pointer">
+                <a href="/feature" className="group inline-block">
+                  <div className="flex items-center">
+                    <p className="text-[16px] text-[#312C85] font-sans font-semibold">
+                      Explore More
+                    </p>
+                    <MdOutlineArrowOutward size={18}
+                      className="mt-1 ml-1 transform transition-transform duration-300 group-hover:rotate-45 cursor-pointer text-[#312C85]"
+                    />
+                  </div>
+                </a>
+                <div className="w-[120px] h-[1.5px] bg-[#312C85]"></div>
+              </div>
             </div>
           </div>
         </div>
@@ -875,7 +899,7 @@ const cardsData = [
       <div className="flex flex-col xl:flex-row items-start justify-between min-h-screen py-16">
 
         {/* LEFT */}
-        <div className="slide-up w-full xl:w-[40%] flex flex-col justify-center">
+        <div className="slide-up w-full xl:w-[30%] flex flex-col justify-center">
 
           <div className="flex flex-row items-center gap-2 text-[#5B61C0] text-[20px] font-semibold">
             <IoSettingsOutline size={25} />
@@ -910,7 +934,7 @@ const cardsData = [
         </div>
 
         {/* RIGHT */}
-        <div className="slide-up w-full xl:w-[75%] mt-14 xl:mt-0">
+        <div className="slide-up w-full xl:w-[65%] mt-14 xl:mt-0">
 
           <div className="font-semibold text-[26px] sm:text-[34px] xl:text-[44px] text-[#312C85]">
             <h1>
@@ -919,9 +943,9 @@ const cardsData = [
               Effortless Building
             </h1>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 mt-13">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 md:gap-10 mt-13">
             <div
-              className="w-100 h-100 bg-white/10 backdrop-blur-md rounded-lg p-3 mt-10 shadow-[0_0_25px_rgba(0,0,0,0.3)] pt-5"
+              className="w-full h-93 bg-white/10 backdrop-blur-md rounded-lg p-5 mt-10 shadow-[0_0_25px_rgba(0,0,0,0.3)] pt-5"
               style={{
                 background: "radial-gradient(circle at center, rgba(200,210,255,0.9) 0%, rgba(245,245,255,1) 60%)",
               }}
@@ -932,7 +956,7 @@ const cardsData = [
                 Chat naturally with powerful AI models for work, learning, and problem-solving.
               </p>
             </div>
-            <div className="w-100 h-100 bg-white/10 backdrop-blur-md rounded-lg p-3 mt-10  shadow-[0_0_25px_rgba(0,0,0,0.3)] pt-5"
+            <div className="w-full h-93 bg-white/10 backdrop-blur-md rounded-lg p-5 mt-10  shadow-[0_0_25px_rgba(0,0,0,0.3)] pt-5"
               style={{
                 background: "radial-gradient(circle at center, rgba(195,210,255,0.9) 0%, rgba(245,245,255,1) 60%)",
               }}>
@@ -944,8 +968,8 @@ const cardsData = [
             </div>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 ">
-            <div className="w-100 h-100 bg-white/10 backdrop-blur-md rounded-lg p-3 mt-8 shadow-[0_0_25px_rgba(0,0,0,0.3)]"
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 md:gap-10">
+            <div className="w-full h-93 bg-white/10 backdrop-blur-md rounded-lg p-5 mt-10 shadow-[0_0_25px_rgba(0,0,0,0.3)]"
               style={{
                 background: "radial-gradient(circle at center, rgba(195,210,255,0.9) 0%, rgba(245,245,255,1) 60%)",
               }}>
@@ -955,7 +979,7 @@ const cardsData = [
                 Test prompts, tune models, and experiment safely before deploying.
               </p>
             </div>
-            <div className="w-100 h-100 bg-white/10 backdrop-blur-md rounded-lg p-3 mt-8 shadow-[0_0_25px_rgba(0,0,0,0.3)]"
+            <div className="w-full h-93 bg-white/10 backdrop-blur-md rounded-lg p-5 mt-10 shadow-[0_0_25px_rgba(0,0,0,0.3)]"
               style={{
                 background: "radial-gradient(circle at center, rgba(195,210,255,0.9) 0%, rgba(245,245,255,1) 60%)",
               }}>
@@ -967,8 +991,8 @@ const cardsData = [
             </div>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 ">
-            <div className="w-100 h-100 bg-white/10 backdrop-blur-md rounded-lg p-3 mt-10 shadow-[0_0_25px_rgba(0,0,0,0.3)]"
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 md:gap-10">
+            <div className="w-full h-93 bg-white/10 backdrop-blur-md rounded-lg p-5 mt-10 shadow-[0_0_25px_rgba(0,0,0,0.3)]"
               style={{
                 background: "radial-gradient(circle at center, rgba(195,210,255,0.9) 0%, rgba(245,245,255,1) 60%)",
               }}>
@@ -978,7 +1002,7 @@ const cardsData = [
                 Build autonomous agents that plan, reason, and execute tasks for you.
               </p>
             </div>
-            <div className="w-100 h-100 bg-white/10 backdrop-blur-md rounded-lg  mt-10  shadow-[0_0_25px_rgba(0,0,0,0.3)] relative">
+            <div className="w-full h-93 bg-white/10 backdrop-blur-md rounded-lg  mt-10  shadow-[0_0_25px_rgba(0,0,0,0.3)] relative">
               <img src={exploremore} alt="" />
               <div className="flex flex-col absolute bottom-7 right-2 gap-3 group cursor-pointer">
                 <a href="/feature" className="group inline-block">
@@ -1016,7 +1040,7 @@ const cardsData = [
           <div className="text-center max-w-5xl mx-auto">
             <div className="text-[#5B61C0] pb-10 text-[18px] font-semibold">
               <p className="pt-30">
-                <LuBrain size={25} className="block mx-auto -mb-7" />Why Choose ignorre.ai
+                <LuBrain size={25} className="block mx-auto lg:-mb-7 mb-0" />Why Choose ignorre.ai
               </p>
             </div>
 
@@ -1041,10 +1065,10 @@ const cardsData = [
             <div className="w-full flex flex-col lg:flex-row gap-5 mb-5">
 
               <div className="h-full w-full lg:w-165 border border-gray-300 rounded-2xl overflow-hidden bg-white mt-5">
-                <img src={hand} alt="" className="h-50 w-50 ml-110 rounded-xl" />
+                <img src={hand} alt="" className="h-50 w-50 ml-auto lg:ml-110 rounded-xl" />
                 <h1 className="-mt-45 ml-6 text-[50px] font-bold leading-tight text-[#312C85]">98%</h1>
                 <h3 className="ml-6 text-[26px] font-semibold text-[#312C85] leading-tight">User Satisfaction</h3>
-                <p className="mt-40 ml-6 text-[#252E3D] text-[18px]">98% of users report improved productivity and better results using ignorre.ai for chat, search, and AI workflows.</p>
+                <p className="lg:mt-40 mt-10 ml-6 text-[#252E3D] text-[18px]">98% of users report improved productivity and better results using ignorre.ai for chat, search, and AI workflows.</p>
               </div>
 
               <div
@@ -1052,7 +1076,7 @@ const cardsData = [
               >
                 {/* Blurred background image layer */}
                 <div
-                  className="absolute inset-0 bg-center bg-cover opacity-10  h-50 w-50 mt-40"
+                  className="absolute inset-0 bg-center bg-cover opacity-10  h-50 w-50 lg:mt-40"
                   style={{
                     backgroundImage: `url(${arrow})`,
                   }}
@@ -1154,10 +1178,10 @@ const cardsData = [
             <div className="w-full flex flex-col lg:flex-row gap-5 mb-5">
 
               <div className="h-full w-full lg:w-165 border border-gray-300 rounded-2xl overflow-hidden bg-white mt-5">
-                <img src={hand} alt="" className="h-50 w-50 ml-110 rounded-xl" />
+                <img src={hand} alt="" className="h-50 w-50 ml-auto lg:ml-110 rounded-xl" />
                 <h1 className="-mt-45 ml-6 text-[50px] font-bold leading-tight text-[#312C85]">98%</h1>
                 <h3 className="ml-6 text-[26px] font-semibold text-[#312C85] leading-tight">User Satisfaction</h3>
-                <p className="mt-40 ml-6 text-[#252E3D] text-[18px]">98% of users report improved productivity and better results using ignorre.ai for chat, search, and AI workflows.</p>
+                <p className="lg:mt-40 mt-10 ml-6 text-[#252E3D] text-[18px]">98% of users report improved productivity and better results using ignorre.ai for chat, search, and AI workflows.</p>
               </div>
 
               <div
@@ -1165,7 +1189,7 @@ const cardsData = [
               >
                 {/* Blurred background image layer */}
                 <div
-                  className="absolute inset-0 bg-center bg-cover opacity-10  h-50 w-50 mt-40"
+                  className="absolute inset-0 bg-center bg-cover opacity-10  h-50 w-50 lg:mt-40"
                   style={{
                     backgroundImage: `url(${arrow})`,
                   }}
@@ -1270,10 +1294,10 @@ const cardsData = [
              <div className="w-full flex flex-col lg:flex-row gap-5 mb-5">
 
               <div className="h-full w-full lg:w-165 border border-gray-300 rounded-2xl overflow-hidden bg-white mt-5">
-                <img src={hand} alt="" className="h-50 w-50 ml-110 rounded-xl" />
+                <img src={hand} alt="" className="h-50 w-50 ml-auto lg:ml-110 rounded-xl" />
                 <h1 className="-mt-45 ml-6 text-[50px] font-bold leading-tight text-[#312C85]">98%</h1>
                 <h3 className="ml-6 text-[26px] font-semibold text-[#312C85] leading-tight">User Satisfaction</h3>
-                <p className="mt-40 ml-6 text-[#252E3D] text-[18px]">98% of users report improved productivity and better results using ignorre.ai for chat, search, and AI workflows.</p>
+                <p className="lg:mt-40 mt-10 ml-6 text-[#252E3D] text-[18px]">98% of users report improved productivity and better results using ignorre.ai for chat, search, and AI workflows.</p>
               </div>
 
               <div
@@ -1281,7 +1305,7 @@ const cardsData = [
               >
                 {/* Blurred background image layer */}
                 <div
-                  className="absolute inset-0 bg-center bg-cover opacity-10  h-50 w-50 mt-40"
+                  className="absolute inset-0 bg-center bg-cover opacity-10  h-50 w-50 lg:mt-40"
                   style={{
                     backgroundImage: `url(${arrow})`,
                   }}
@@ -1480,7 +1504,7 @@ const cardsData = [
     <div className="mt-10 flex flex-col gap-6 justify-center items-center abc">
 
       {/* STARTER */}
-      <div className="bg-white w-[100] rounded-2xl shadow p-7 border border-gray-200 lg:h-140">
+      <div className="bg-white w-full max-w-sm rounded-2xl shadow p-7 border border-gray-200 lg:h-140">
        <p className="font-semibold text-[#312C85]">Starter</p>
               <div className="flex items-end gap-2 mt-2 text-[#312C85]">
                 <h1 className="text-[50px] font-bold">${pricing2.starter}</h1>
@@ -1508,7 +1532,7 @@ const cardsData = [
       </div>
 
       {/* PRO */}
-      <div className="bg-white w-[100] rounded-2xl shadow p-7 border border-gray-200 lg:h-140 ">
+      <div className="bg-white w-full max-w-sm rounded-2xl shadow p-7 border border-gray-200 lg:h-140 ">
         <div className="flex items-center gap-2">
                 <p className="font-semibold text-[#312C85]">Pro</p>
                 <FaFireAlt className="text-[#4671D7]" />
@@ -1543,7 +1567,7 @@ const cardsData = [
       </div>
 
       {/* ENTERPRISE */}
-      <div className="bg-white w-[100] rounded-2xl shadow p-7 border border-gray-200">
+      <div className="bg-white w-full max-w-sm rounded-2xl shadow p-7 border border-gray-200">
        <p className="font-semibold text-[#312C85]">Enterprise</p>
               <h1 className="text-[50px] font-bold mt-2 text-[#312C85]">Custom</h1>
               <p className="text-[15px] text-[#312C85] mt-2 mb-4">
@@ -1571,9 +1595,9 @@ const cardsData = [
     </div>
   ) : (
     /* 💻 DESKTOP + LAPTOP — ANIMATED SLIDER VIEW */
-    <div className="mt-10 flex flex-col md:flex-row gap-6 justify-center items-center abc ">
+    <div className="mt-10 flex flex-col md:flex-row gap-6 justify-center items-center flex-wrap abc">
       {/* STARTER */}
-      <div className="bg-white w-[430px] lg:w-[400px] rounded-2xl shadow p-7 border border-gray-200 h-[550px]">
+      <div className="bg-white w-full sm:w-[430px] lg:w-[400px] rounded-2xl shadow p-7 border border-gray-200 h-[550px]">
       <p className="font-semibold text-[#312C85]">Starter</p>
               <div className="flex items-end gap-2 mt-2 text-[#312C85]">
                 <h1 className="text-[50px] font-bold">${pricing2.starter}</h1>
@@ -1601,7 +1625,7 @@ const cardsData = [
       </div>
 
       {/* PRO */}
-      <div className="bg-white w-[430px] lg:w-[400px] rounded-2xl shadow p-7 border border-gray-200 h-[550px]">
+      <div className="bg-white w-full sm:w-[430px] lg:w-[400px] rounded-2xl shadow p-7 border border-gray-200 h-[550px]">
         <div className="flex items-center gap-2">
                 <p className="font-semibold text-[#312C85]">Pro</p>
                 <FaFireAlt className="text-[#4671D7]" />
@@ -1636,7 +1660,7 @@ const cardsData = [
       </div>
 
       {/* ENTERPRISE */}
-      <div className="bg-white w-[430px] lg:w-[400px] rounded-2xl shadow p-7 border border-gray-200 h-[550px]">
+      <div className="bg-white w-full sm:w-[430px] lg:w-[400px] rounded-2xl shadow p-7 border border-gray-200 h-[550px]">
         <p className="font-semibold text-[#312C85]">Enterprise</p>
               <h1 className="text-[50px] font-bold mt-2 text-[#312C85]">Custom</h1>
               <p className="text-[15px] text-[#252E3D] mt-2 mb-4">
@@ -1673,7 +1697,7 @@ const cardsData = [
     <div className="bg-[#E3E9FF] min-h-screen w-full overflow-x-hidden Gfont abc">
   <div
     className="
-      max-w-[1600px]
+      max-w-7xl
       mx-auto
       w-full
       flex flex-col xl:flex-row
@@ -1694,7 +1718,7 @@ const cardsData = [
         gap-4
       "
     >
-      <div className="flex items-center gap-2 text-[18px] text-[#4671D7] font-semibold">
+      <div className="flex items-center justify-center xl:justify-start gap-2 text-[18px] text-[#4671D7] font-semibold">
         <FaHeadset size={18} />
         <p>Support Center</p>
       </div>
@@ -1814,7 +1838,7 @@ const cardsData = [
 {/* ninth page */}
 
     <div className="min-h-screen bg-[#E3E9FF] Gfont abc overflow-x-hidden">
-  <div className="max-w-[1600px] mx-auto w-full px-4 sm:px-6 lg:px-8">
+  <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8">
 
     {/* HEADING SECTION */}
     <div
@@ -2015,16 +2039,17 @@ const cardsData = [
 </div>
 
       {/* last page */}
-      <div className="h-screen xl:-mt-15 lg:mt-0 Gfont lg:mb-0 bg-[#E3E9FF] abc">
+      <div className="min-h-screen lg:min-h-0 xl:-mt-15 lg:mt-0 Gfont lg:mb-0 bg-[#E3E9FF] abc">
         <div className="relative h-auto lg:h-[800px] w-full overflow-hidden">
 
           {/* Centered Content */}
           <div className="flex justify-center items-center relative z-10 h-full text-center">
-            <div className="  flex flex-col items-center justify-center 
-        h-160 w-100 pl-10 pr-10
+            <div className="flex flex-col items-center justify-center 
+        w-[90%] sm:w-[80%] md:w-[70%] lg:w-auto max-w-4xl
+        px-6 sm:px-10 py-10 sm:py-16
         bg-white 
         rounded-3xl 
-         md:w-[70%] lg:w-auto">
+        mx-auto my-20 lg:my-0">
               <div className="flex lg:-mt-0 gap-2 text-[#5B62C0]"><LuMessageCircleMore size={25} /> <p className="text-[16px] lg:text-[18px]">Let’s Connect</p></div>
               <h1 className="mt-5 lg:mt-5 text-[30px] md:text-[36px] lg:text-[44px] font-semibold text-[#312C85]">Start the Conversation Today</h1>
               <p className="mt-6 lg:mt-5 text-[14px] md:text-[16px] lg:text-[18px] leading-relaxed text-[#4A5565]">“At Vayuna, we believe every business deserves the power of AI—whether you're just starting or<br /> scaling fast. My team and I are here to support your vision and help you move forward with<br /> confidence.”</p>

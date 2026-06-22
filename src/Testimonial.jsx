@@ -122,10 +122,10 @@ const Testimonial = () => {
         <a href="#" className="text-[#312C85] text-xs font-bold tracking-wider uppercase abc">
           Feedback From Our Users
         </a>
-        <h2 className="text-5xl md:text-7xl font-bold mt-6 mb-8 tracking-tight text-[#312C85] abc">
+        <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold mt-6 mb-8 tracking-tight text-[#312C85] abc">
           Trusted by <span className="bg-gradient-to-r from-blue-500 to-indigo-500 text-transparent bg-clip-text transition-all duration-500 abc">Thousands</span>
         </h2>
-        <p className="text-[#585765] text-lg md:text-xl max-w-3xl mx-auto leading-relaxed abc">
+        <p className="text-[#585765] text-base sm:text-lg md:text-xl max-w-3xl mx-auto leading-relaxed abc">
           Discover why businesses choose ignorre.com for domains, hosting,
           servers, and subscription management — all from one powerful dashboard.
         </p>

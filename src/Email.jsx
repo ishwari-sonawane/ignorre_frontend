@@ -88,10 +88,10 @@ const Home = () => {
     className="w-full min-h-screen flex flex-col items-center justify-center bg-[#E3E9FF] px-6 py-20"
   >
     {/* CONTENT WRAPPER */}
-    <div className="flex flex-col items-center text-center w-full max-w-[1400px] mx-auto">
+    <div className="flex flex-col items-center text-center w-full max-w-7xl mx-auto">
       
       {/* Heading: Forced 3-line layout to match the screenshot exactly */}
-      <h1 className="text-[40px] sm:text-[62px] lg:text-[74px] font-bold text-[#312C85] leading-[1.05] tracking-tight">
+      <h1 className="text-[28px] sm:text-[42px] md:text-[62px] lg:text-[74px] font-bold text-[#312C85] leading-[1.05] tracking-tight">
         Work smarter with secure email, <br className='hidden lg:block'/>storage & meetings
       </h1>
 
@@ -123,7 +123,7 @@ const Home = () => {
 
 <div className="w-full bg-[#F9F9F9] py-10 px-4">
   <div 
-    className="slide-up mx-auto max-w-[1440px] 2xl:max-w-[1920px]
+    className="slide-up mx-auto max-w-7xl
                grid items-center justify-items-center
                grid-cols-2      /* Mobile: 2 columns */
                md:grid-cols-3   /* Tablet: 3 columns */
@@ -157,60 +157,60 @@ const Home = () => {
             </p>
 
             {/* CARD 1 */}
-            <div className="slide-up sm:h-60 md:h-40 w-full lg:w-210 flex gap-5 p-5 bg-[#F9F9F9] border-l-7 border-l-[#312C85] border border-gray-300 rounded-2xl mt-20">
-              <div className="bg-[#FFFFFF] h-15 w-15 flex items-center justify-center mt-3 p-4 rounded-full">
+            <div className="slide-up w-full max-w-3xl flex flex-col sm:flex-row gap-5 p-5 bg-[#F9F9F9] border-l-7 border-l-[#312C85] border border-gray-300 rounded-2xl mt-20">
+              <div className="bg-[#FFFFFF] h-15 w-15 flex items-center justify-center mt-3 p-4 rounded-full flex-shrink-0">
                 <RiUserCommunityLine size={38} className="text-[#312C85]" />
               </div>
               <div className="mt-3">
-                <p className="text-[22px] lg:text-[24px] text-[#312C85] font-medium">
+                <p className="text-[20px] sm:text-[22px] lg:text-[24px] text-[#312C85] font-medium">
                   Communicate professionally
                 </p>
-                <p className="text-[16px] lg:text-[18px] text-[#87928F] font-medium">
+                <p className="text-[15px] sm:text-[16px] lg:text-[18px] text-[#87928F] font-medium">
                   Send and receive business emails with custom domains, smart inbox tools, and enterprise-grade security using Ignorre Webmail.
                 </p>
               </div>
             </div>
 
             {/* CARD 2 */}
-            <div className="slide-up sm:h-60 md:h-40 w-full lg:w-210 flex gap-5 p-5 bg-[#F9F9F9] border-l-7 border-l-[#312C85] border border-gray-300 rounded-2xl mt-5">
-              <div className="bg-[#FFFFFF] h-15 w-15 flex items-center justify-center mt-3 p-4 rounded-full">
+            <div className="slide-up w-full max-w-3xl flex flex-col sm:flex-row gap-5 p-5 bg-[#F9F9F9] border-l-7 border-l-[#312C85] border border-gray-300 rounded-2xl mt-5">
+              <div className="bg-[#FFFFFF] h-15 w-15 flex items-center justify-center mt-3 p-4 rounded-full flex-shrink-0">
                 <TbLockShare size={38} className="text-[#312C85]" />
               </div>
               <div className="mt-3">
-                <p className="text-[22px] lg:text-[24px] text-[#312C85] font-medium">
+                <p className="text-[20px] sm:text-[22px] lg:text-[24px] text-[#312C85] font-medium">
                   Store & share securely
                 </p>
-                <p className="text-[16px] lg:text-[18px] text-[#87928F] font-medium">
+                <p className="text-[15px] sm:text-[16px] lg:text-[18px] text-[#87928F] font-medium">
                   Upload, organize, and share files with team members using Ignorre Drive with fine-grained access control and secure cloud storage.
                 </p>
               </div>
             </div>
 
             {/* CARD 3 */}
-            <div className="slide-up sm:h-60 md:h-40 w-full lg:w-210 flex gap-5 p-5 bg-[#F9F9F9] border-l-7 border-l-[#312C85] border border-gray-300 rounded-2xl mt-5">
-              <div className="bg-[#FFFFFF] h-15 w-15 flex items-center justify-center mt-3 p-4 rounded-full">
+            <div className="slide-up w-full max-w-3xl flex flex-col sm:flex-row gap-5 p-5 bg-[#F9F9F9] border-l-7 border-l-[#312C85] border border-gray-300 rounded-2xl mt-5">
+              <div className="bg-[#FFFFFF] h-15 w-15 flex items-center justify-center mt-3 p-4 rounded-full flex-shrink-0">
                 <FaHandshakeAngle size={38} className="text-[#312C85]" />
               </div>
               <div className="mt-3">
-                <p className="text-[22px] lg:text-[24px] text-[#312C85] font-medium">
+                <p className="text-[20px] sm:text-[22px] lg:text-[24px] text-[#312C85] font-medium">
                   Collaborate in real time
                 </p>
-                <p className="text-[16px] lg:text-[18px] text-[#87928F] font-medium">
+                <p className="text-[15px] sm:text-[16px] lg:text-[18px] text-[#87928F] font-medium">
                   Host secure video meetings, share screens, and collaborate instantly with Ignorre Meet, no installs required.
                 </p>
               </div>
             </div>
 
             {/* CARD 4 */}
-            <div className="slide-up sm:h-60 md:h-40 w-full lg:w-210 flex gap-5 p-5 bg-[#F9F9F9] border-l-7 border-l-[#312C85] border border-gray-300 rounded-2xl mt-5">
-              <div className="bg-[#FFFFFF] h-15 w-15 flex items-center justify-center mt-3 p-4 rounded-full">
+            <div className="slide-up w-full max-w-3xl flex flex-col sm:flex-row gap-5 p-5 bg-[#F9F9F9] border-l-7 border-l-[#312C85] border border-gray-300 rounded-2xl mt-5">
+              <div className="bg-[#FFFFFF] h-15 w-15 flex items-center justify-center mt-3 p-4 rounded-full flex-shrink-0">
                 <MdOutlineManageAccounts size={38} className="text-[#312C85]" />
               </div>
               <div className="mt-3">
-                <p className="text-[22px] lg:text-[24px] text-[#312C85] font-medium">
+                <p className="text-[20px] sm:text-[22px] lg:text-[24px] text-[#312C85] font-medium">
                   Manage everything centrally
                 </p>
-                <p className="text-[16px] lg:text-[18px] text-[#87928F] font-medium">
+                <p className="text-[15px] sm:text-[16px] lg:text-[18px] text-[#87928F] font-medium">
                   Control users, permissions, storage, and security policies from a single admin dashboard built for teams and enterprises.
                 </p>
               </div>
@@ -230,7 +230,7 @@ const Home = () => {
       {/* ignorr product tabs */}
 <div className='bg-[#E3E9FF] abc w-full overflow-hidden'>
   {/* CONTAINER: Max-width keeps it centered on zoom, padding prevents edge-touching */}
-  <div className="slide-up py-16 md:py-24 px-4 sm:px-10 max-w-[1400px] mx-auto">
+  <div className="slide-up py-16 md:py-24 px-4 sm:px-10 max-w-7xl mx-auto">
 
     <p className="text-[32px] sm:text-[40px] lg:text-[48px] font-semibold text-[#312C85] text-center leading-tight">
       Powerful tools to run your entire workspace
@@ -319,7 +319,7 @@ const Home = () => {
       {/* client reviews */}
 <div className='bg-[#E3E9FF] abc w-full min-h-screen flex flex-col justify-center'>
   <div className="slide-up
-          mx-auto w-full max-w-[1600px]
+          mx-auto w-full max-w-7xl
           pt-20 lg:pt-30 
           px-6 sm:px-10 
           2xl:px-20 

@@ -66,10 +66,10 @@ const Features = () => {
         <span className="text-[#312C85] text-sm font-semibold tracking-wide uppercase pb-1 abc">
           Features
         </span>
-        <h2 className="text-4xl md:text-6xl font-bold mt-8 mb-6 tracking-tight text-[#312C85] abc leading-tight">
+        <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold mt-8 mb-6 tracking-tight text-[#312C85] abc leading-tight">
           Everything You Need to Power Your <span className="bg-gradient-to-r from-blue-500 to-indigo-500 text-transparent bg-clip-text transition-all duration-500">Online Business</span>
         </h2>
-        <p className="text-[#585765] text-lg leading-relaxed max-w-2xl mx-auto">
+        <p className="text-[#585765] text-base sm:text-lg leading-relaxed max-w-2xl mx-auto">
           Ignorre.com brings domains, hosting, servers, and subscriptions together in one intelligent platform — built for speed, security, and effortless scaling.
         </p>
       </div>

@@ -32,13 +32,13 @@ const Header = () => {
                 {/* Center Nav */}
 
                 <div className="lg:hidden">
-                    <button onClick={() => setMenuOpen(!menuOpen)}>
+                    <button onClick={() => setMenuOpen(!menuOpen)} aria-label="Toggle menu">
                         {menuOpen ? <HiX size={28} /> : <HiMenu size={28} />}
                     </button>
                 </div>
                 <div className={`
     ${menuOpen
-                        ? "flex flex-col absolute top-[80px] left-0 w-full bg-white shadow-lg p-6 z-50"
+                        ? "flex flex-col absolute top-[80px] left-0 w-full bg-white shadow-lg p-6 z-50 max-h-[90vh] overflow-y-auto"
                         : "hidden"
                     }
     lg:flex lg:static lg:flex-row lg:items-center lg:bg-transparent lg:shadow-none lg:p-0
@@ -71,10 +71,12 @@ const Header = () => {
   Products <MdKeyboardArrowDown className='text-[20px] hidden lg:block' />
 </Link>
 
-                        <div className="fixed top-[80px] left-1/2 -translate-x-1/2 w-[95vw] lg:w-[1000px] 2xl:h-[45vh] bg-white shadow-2xl rounded-2xl p-8 flex gap-8 z-50 
+                        <div className="hidden lg:block fixed top-[80px] left-1/2 -translate-x-1/2 w-[95vw] lg:w-[1000px] 2xl:h-[45vh] bg-white shadow-2xl rounded-2xl p-8 z-50 
                   opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
 
-                            <div className="grid grid-cols-2 gap-6 flex-1">
+                            <div className="grid grid-cols-3 gap-6 h-full">
+
+                              <div className="col-span-2 grid grid-cols-2 gap-6 content-start">
 
                                      <Link to="/domain">
                                  <div className="flex gap-4 cursor-pointer hover:bg-[#e6eafa] hover:text-[#4F45F7] p-4 rounded-lg">
@@ -83,7 +85,7 @@ const Header = () => {
                                     </div>
                                     <div>
                                         <h1 className="font-semibold text-[18px]">Domain Registration</h1>
-                                        <p className="text-sm text-gray-500 ">
+                                        <p className="text-sm text-gray-500">
                                             Search & register domains<br /> instantly
                                         </p>
                                     </div>
@@ -145,9 +147,9 @@ const Header = () => {
                                 </div>
                                 </Link>
                                 
-                            </div>
+                              </div>
 
-                            <div className="w-[280px] bg-[#f3f4ff] rounded-xl p-6 flex flex-col justify-between">
+                              <div className="bg-[#f3f4ff] rounded-xl p-6 flex flex-col justify-between h-full">
                                 <div>
                                     <h1 className="font-semibold text-[18px] mb-2">
                                         Explore Products
@@ -161,6 +163,8 @@ const Header = () => {
                                 <button className="mt-6 bg-black text-white rounded-full py-2 w-full text-sm">
                                     View All Products →
                                 </button></a>
+                              </div>
+
                             </div>
 
                         </div>
@@ -190,12 +194,13 @@ const Header = () => {
   Features <MdKeyboardArrowDown className='text-[20px] hidden lg:block'/>
 </Link>
                         {/* Dropdown */}
-                        <div className="fixed top-[80px] left-1/2 -translate-x-1/2 w-[95vw] lg:w-[1000px] 2xl:h-[35vh] bg-white shadow-2xl rounded-2xl p-8 flex gap-8 z-50 
+                        <div className="hidden lg:block fixed top-[80px] left-1/2 -translate-x-1/2 w-[95vw] lg:w-[1000px] 2xl:h-[35vh] bg-white shadow-2xl rounded-2xl p-8 z-50 
                   opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
                             {/* LEFT */}
-                            <div className="grid grid-cols-2 gap-6 flex-1">
+                            <div className="grid grid-cols-3 gap-6 h-full">
 
-                                {/* <div className="flex gap-4 cursor-pointer hover:bg-gray-100 p-2 rounded-lg"> */}
+                              <div className="col-span-2 grid grid-cols-2 gap-6 content-start">
+
                                 <div className="flex gap-4 cursor-pointer hover:bg-[#e6eafa] hover:text-[#4F45F7] p-4 rounded-lg">
                                     <div className='bg-gray-100 text-[20px] p-3 h-[60px] text-center flex items-center justify-center rounded-2xl hover:text-white'>
                                         <GoGlobe />
@@ -244,10 +249,10 @@ const Header = () => {
                                     </div>
                                 </div>
 
-                            </div>
+                              </div>
 
-                            {/* RIGHT CARD */}
-                            <div className="w-[280px] bg-[#f3f4ff] rounded-xl p-6 flex flex-col justify-between">
+                              {/* RIGHT CARD */}
+                              <div className="bg-[#f3f4ff] rounded-xl p-6 flex flex-col justify-between">
                                 <div>
                                     <h3 className="font-semibold text-lg mb-2">
                                         Explore Features
@@ -261,6 +266,8 @@ const Header = () => {
                                 <a href="/features"><button className="mt-6 bg-black text-white rounded-full py-2 text-sm w-full">
                                     View All Features →
                                 </button></a>
+                              </div>
+
                             </div>
 
                         </div>

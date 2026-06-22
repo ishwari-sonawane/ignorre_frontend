@@ -19,11 +19,11 @@ export default function SupportSalesSection() {
             GET IN TOUCH
           </p>
 
-          <h1 className="text-4xl md:text-6xl font-bold mt-6 leading-tight text-[#312C85]">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mt-6 leading-tight text-[#312C85]">
             Support &amp; Sales
           </h1>
 
-          <p className="text-[#586579] text-lg max-w-2xl mx-auto mt-6 leading-relaxed">
+          <p className="text-[#586579] text-base sm:text-lg max-w-2xl mx-auto mt-6 leading-relaxed">
             Have questions about domains, hosting, VPS servers, or
             subscriptions?
             <br />

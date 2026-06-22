@@ -73,7 +73,7 @@ const faqs = [
       {/* <Navbar /> */}
       {/* page first  */}
     <div className="bg-[#E1E8FF] w-full overflow-x-hidden">
-  <div className="slide-up min-h-[85vh] max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center justify-between">
+  <div className="slide-up min-h-[85vh] max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center justify-between">
 
     {/* Left Section */}
     <div className="w-full lg:w-1/2 flex flex-col justify-center">
@@ -102,25 +102,25 @@ const faqs = [
       </div>
 
       {/* White Card */}
-      <div className="w-full max-w-[700px] mt-10 rounded-2xl bg-white p-5 flex flex-col sm:flex-row">
+      <div className="w-full max-w-[700px] mt-10 rounded-2xl bg-white p-5 flex flex-col sm:flex-row gap-6 sm:gap-0">
 
         <div className="w-full sm:w-1/2">
-          <h1 className="text-[20px] bg-gradient-to-r from-[#3575FF] via-[#5A7BFF] to-[#7B61FF] bg-clip-text text-transparent font-bold">
+          <h1 className="text-[18px] sm:text-[20px] bg-gradient-to-r from-[#3575FF] via-[#5A7BFF] to-[#7B61FF] bg-clip-text text-transparent font-bold">
             Start building with ignorre
             <br />
             DNS
           </h1>
 
           <div className="flex mt-5">
-            <div className="h-9 w-9 rounded-full text-center text-[28px]">+</div>
-            <img src={h4} alt="" className="h-10 w-10 -ml-1 rounded-full" />
-            <img src={h3} alt="" className="h-11 w-11 -ml-1 rounded-full" />
-            <img src={h2} alt="" className="h-12 w-12 -ml-1 rounded-full" />
-            <img src={h1} alt="" className="h-13 w-13 -ml-1 rounded-full" />
+            <div className="h-9 w-9 rounded-full text-center text-[28px] leading-9">+</div>
+            <img src={h4} alt="" className="h-9 w-9 -ml-1 rounded-full" />
+            <img src={h3} alt="" className="h-10 w-10 -ml-1 rounded-full" />
+            <img src={h2} alt="" className="h-11 w-11 -ml-1 rounded-full" />
+            <img src={h1} alt="" className="h-12 w-12 -ml-1 rounded-full" />
           </div>
         </div>
 
-        <div className="w-full sm:w-1/2 mt-6 sm:mt-0 sm:pl-5">
+        <div className="w-full sm:w-1/2 mt-0 sm:pl-5">
           <p className="text-[14px] sm:text-[16px] text-[#4A5579]">
             Launch faster with a secure, developer-friendly
             <br />
@@ -130,13 +130,13 @@ const faqs = [
           </p>
 
           <div className="flex gap-2 mt-5">
-            <MdOutlineEmail size={25} />
+            <MdOutlineEmail size={25} className="flex-shrink-0" />
             <input
               type="text"
               placeholder="Email"
-              className="w-full border-0 border-b border-gray-300 focus:border-b-2 focus:border-black focus:outline-none transition-all duration-300"
+              className="w-full border-0 border-b border-gray-300 focus:border-b-2 focus:border-black focus:outline-none transition-all duration-300 min-w-0"
             />
-            <RiArrowRightUpLine size={25} className="-ml-5" />
+            <RiArrowRightUpLine size={25} className="flex-shrink-0" />
           </div>
         </div>
 
@@ -144,11 +144,11 @@ const faqs = [
     </div>
 
     {/* Right Section */}
-    <div className="w-full lg:w-1/2 flex justify-center items-center mt-10 lg:mt-15">
+      <div className="w-full lg:w-1/2 flex justify-center items-center mt-10 lg:mt-15">
       <img
         src={home}
         alt=""
-        className="w-[320px] sm:w-[450px] md:w-[550px] lg:w-[650px] xl:w-[700px] "
+        className="w-full max-w-[320px] sm:max-w-[450px] md:max-w-[550px] lg:max-w-[650px] xl:max-w-[700px]"
       />
     </div>
 
@@ -162,7 +162,7 @@ const faqs = [
       slide-up
       min-h-[90vh]
       w-full
-      max-w-[1600px]
+      max-w-7xl
       mx-auto
       px-6 sm:px-10 lg:px-12
       pt-16 xl:pt-32 2xl:pt-40
@@ -201,148 +201,62 @@ const faqs = [
       "
     >
       {/* CARD 1 */}
-      <div className="w-full md:w-[80%] lg:w-full max-w-[420px]">
-        <img
-          src={pf1}
-          alt=""
-          className="
-            w-full
-            h-[270px]
-            sm:h-[260px]
-            md:h-[300px]
-            lg:h-[350px]
-            xl:h-[400px]
-            object-cover
-            border
-            border-gray-300
-            rounded-2xl
-            bg-white
-          "
-        />
+      <div className="w-full max-w-[420px]">
+        <div className="w-full aspect-[4/3] sm:aspect-[7/5] lg:aspect-[4/3] xl:aspect-[7/5] overflow-hidden border border-gray-300 rounded-2xl bg-white">
+          <img
+            src={pf1}
+            alt=""
+            className="w-full h-full object-cover"
+          />
+        </div>
 
-        <h1
-          className="
-            text-[18px]
-            lg:text-[20px]
-            2xl:text-[22px]
-            mt-3
-            mb-4
-            text-[#312C85]
-            font-semibold
-          "
-        >
+        <h1 className="text-[18px] lg:text-[20px] mt-3 mb-4 text-[#312C85] font-semibold">
           Smart DNS Management
         </h1>
 
-        <p
-          className="
-            text-[14px]
-            lg:text-[16px]
-            2xl:text-[17px]
-            text-[#585757]
-          "
-        >
+        <p className="text-[14px] lg:text-[16px] text-[#585757]">
           Manage DNS records with real-time updates, fast
-          <br />
           propagation, and full visibility — all from one dashboard.
         </p>
       </div>
 
       {/* CARD 2 */}
-      <div className="w-full md:w-[80%] lg:w-full max-w-[420px]">
-        <img
-          src={pf2}
-          alt=""
-          className="
-            w-full
-            h-[270px]
-            sm:h-[260px]
-            md:h-[300px]
-            lg:h-[350px]
-            xl:h-[400px]
-            object-cover
-            border
-            border-gray-300
-            rounded-2xl
-            bg-white
-          "
-        />
+      <div className="w-full max-w-[420px]">
+        <div className="w-full aspect-[4/3] sm:aspect-[7/5] lg:aspect-[4/3] xl:aspect-[7/5] overflow-hidden border border-gray-300 rounded-2xl bg-white">
+          <img
+            src={pf2}
+            alt=""
+            className="w-full h-full object-cover"
+          />
+        </div>
 
-        <h1
-          className="
-            text-[18px]
-            lg:text-[20px]
-            2xl:text-[22px]
-            mt-3
-            mb-4
-            text-[#312C85]
-            font-semibold
-          "
-        >
+        <h1 className="text-[18px] lg:text-[20px] mt-3 mb-4 text-[#312C85] font-semibold">
           Advanced Proxy Manager
         </h1>
 
-        <p
-          className="
-            text-[14px]
-            lg:text-[16px]
-            2xl:text-[17px]
-            text-[#585757]
-          "
-        >
+        <p className="text-[14px] lg:text-[16px] text-[#585757]">
           Route traffic through secure, high-performance proxies
-          to
-          <br />
-          improve speed, reliability, and control.
+          to improve speed, reliability, and control.
         </p>
       </div>
 
       {/* CARD 3 */}
-      <div className="w-full md:w-[80%] lg:w-full max-w-[420px]">
-        <img
-          src={pf3}
-          alt=""
-          className="
-            w-full
-            h-[270px]
-            sm:h-[260px]
-            md:h-[300px]
-            lg:h-[350px]
-            xl:h-[400px]
-            object-cover
-            border
-            border-gray-300
-            rounded-2xl
-            bg-white
-          "
-        />
+      <div className="w-full max-w-[420px]">
+        <div className="w-full aspect-[4/3] sm:aspect-[7/5] lg:aspect-[4/3] xl:aspect-[7/5] overflow-hidden border border-gray-300 rounded-2xl bg-white">
+          <img
+            src={pf3}
+            alt=""
+            className="w-full h-full object-cover"
+          />
+        </div>
 
-        <h1
-          className="
-            text-[18px]
-            lg:text-[20px]
-            2xl:text-[22px]
-            mt-3
-            mb-4
-            text-[#312C85]
-            font-semibold
-          "
-        >
+        <h1 className="text-[18px] lg:text-[20px] mt-3 mb-4 text-[#312C85] font-semibold">
           Analytics & Monitoring
         </h1>
 
-        <p
-          className="
-            text-[14px]
-            lg:text-[16px]
-            2xl:text-[17px]
-            text-[#585757]
-          "
-        >
+        <p className="text-[14px] lg:text-[16px] text-[#585757]">
           Monitor DNS queries and traffic in real time
-          with clear,
-          <br />
-          actionable insights.
+          with clear, actionable insights.
         </p>
       </div>
     </div>
@@ -357,7 +271,7 @@ const faqs = [
       slide-up
       min-h-[90vh]
       w-full
-      max-w-[1600px]
+      max-w-7xl
       mx-auto
       flex flex-col
       lg:flex-row
@@ -410,7 +324,7 @@ const faqs = [
         "
       >
         Built for startups & businesses running
-        <br className="hidden xl:block" />
+        {/* <br className="hidden xl:block" /> */}
         modern infrastructure
       </h1>
 
@@ -464,7 +378,7 @@ const faqs = [
       slide-up
       min-h-[80vh]
       w-full
-      max-w-[1600px]
+      max-w-7xl
       mx-auto
       flex flex-col
       lg:flex-row
@@ -611,7 +525,7 @@ const faqs = [
       slide-up
       min-h-[70vh]
       w-full
-      max-w-[1600px]
+      max-w-7xl
       mx-auto
       px-6 sm:px-10 lg:px-12
       pt-20 xl:pt-32
@@ -654,7 +568,6 @@ const faqs = [
         className="
           w-full
           max-w-[700px]
-          h-auto lg:h-[520px] 2xl:h-[320px]
           bg-white
           rounded-2xl
           flex flex-col sm:flex-row
@@ -663,16 +576,7 @@ const faqs = [
         "
       >
         <div className="w-full sm:flex-1 p-6 lg:p-8">
-          <h1
-            className="
-              text-[18px]
-              lg:text-[20px]
-              2xl:text-[22px]
-              mb-3
-              text-[#312C85]
-              font-semibold
-            "
-          >
+          <h1 className="text-[18px] lg:text-[20px] mb-3 text-[#312C85] font-semibold">
             Reliable DNS Performance
           </h1>
 
@@ -682,7 +586,7 @@ const faqs = [
             from one dashboard is effortless.
           </p>
 
-          <p className="mt-6 lg:mt-16 text-[16px] text-[#312C85] font-semibold">
+          <p className="mt-6 lg:mt-10 text-[16px] text-[#312C85] font-semibold">
             Brooklyn Simmons
           </p>
 
@@ -691,7 +595,7 @@ const faqs = [
           </p>
         </div>
 
-        <div className="w-full sm:w-[240px] h-[420px] sm:h-full bg-black">
+        <div className="w-full sm:w-[240px] h-[500px] sm:h-auto bg-black">
           <img
             src={client1}
             alt=""
@@ -699,6 +603,7 @@ const faqs = [
               h-full
               w-full
               object-cover
+              object-[center_center]
               transition-transform
               duration-500
               ease-out
@@ -713,7 +618,6 @@ const faqs = [
         className="
           w-full
           max-w-[700px]
-          h-auto lg:h-[520px] 2xl:h-[320px]
           bg-white
           rounded-2xl
           flex flex-col sm:flex-row
@@ -722,16 +626,7 @@ const faqs = [
         "
       >
         <div className="w-full sm:flex-1 p-6 lg:p-8">
-          <h1
-            className="
-              text-[18px]
-              lg:text-[20px]
-              2xl:text-[22px]
-              mb-3
-              text-[#312C85]
-              font-semibold
-            "
-          >
+          <h1 className="text-[18px] lg:text-[20px] mb-3 text-[#312C85] font-semibold">
             Secure & Scalable Infrastructure
           </h1>
 
@@ -741,7 +636,7 @@ const faqs = [
             worrying about infrastructure security.
           </p>
 
-          <p className="mt-6 lg:mt-16 text-[16px] text-[#312C85] font-semibold">
+          <p className="mt-6 lg:mt-10 text-[16px] text-[#312C85] font-semibold">
             Courtney Henry
           </p>
 
@@ -750,7 +645,7 @@ const faqs = [
           </p>
         </div>
 
-        <div className="w-full sm:w-[240px] h-[420px] sm:h-full bg-black">
+        <div className="w-full sm:w-[240px] h-[500px] sm:h-auto bg-black">
           <img
             src={client2}
             alt=""
@@ -775,24 +670,25 @@ const faqs = [
       {/* page sixth */}
 
      <div className="bg-[#E1E8FF] abc">
-  <div
+   <div
     className=" slide-up
-      min-h-[90vh] w-full
+      min-h-[90vh] w-full max-w-7xl
       flex flex-col
       lg:flex-row
       gap-8 lg:gap-5
       items-center justify-center
+      mx-auto
       px-6 sm:px-10
       lg:pt-50 pt-20
     "
   >
     {/* COLUMN 1 */}
-    <div className="w-full sm:w-[80%] lg:w-110 flex flex-col gap-5">
+    <div className="w-full lg:w-[32%] flex flex-col gap-5">
       <div className="w-full rounded-2xl">
         <img
           src={client3}
           alt=""
-          className="w-full h-[220px] sm:h-[260px] lg:h-75 object-cover rounded-2xl"
+          className="w-full h-[220px] sm:h-[260px] lg:h-72 object-cover rounded-2xl"
         />
       </div>
 
@@ -803,13 +699,13 @@ const faqs = [
         <p className="text-[14px] lg:text-[15px] text-[#333333]">
           Trusted by thousands of domains running on ignorre DNS worldwide.
         </p>
-        <p className="text-[40px] lg:text-[50px] mt-8 lg:mt-13 text-[#312C85] font-semibold">5k+</p>
+        <p className="text-[36px] sm:text-[40px] lg:text-[50px] mt-6 lg:mt-10 text-[#312C85] font-semibold">5k+</p>
         <p className="text-[14px] text-[#312C85] font-semibold">Domains Managed</p>
       </div>
     </div>
 
     {/* COLUMN 2 */}
-    <div className="w-full sm:w-[80%] lg:w-110 flex flex-col gap-5">
+    <div className="w-full lg:w-[32%] flex flex-col gap-5">
       <div className="w-full bg-white rounded-2xl p-6 lg:p-8">
         <p className="text-[16px] lg:text-[18px] font-bold text-[#312C85]">
           Global DNS Access
@@ -818,7 +714,7 @@ const faqs = [
           Cloud-based DNS infrastructure enabling fast, reliable access
           from anywhere in the world.
         </p>
-        <p className="text-[40px] lg:text-[50px] mt-8 lg:mt-13 text-[#312C85] font-semibold">100%</p>
+        <p className="text-[36px] sm:text-[40px] lg:text-[50px] mt-6 lg:mt-10 text-[#312C85] font-semibold">100%</p>
         <p className="text-[14px] text-[#312C85] font-semibold">Always Available</p>
       </div>
 
@@ -826,18 +722,18 @@ const faqs = [
         <img
           src={client4}
           alt=""
-          className="w-full h-[220px] sm:h-[260px] lg:h-75 object-cover rounded-2xl"
+          className="w-full h-[220px] sm:h-[260px] lg:h-72 object-cover rounded-2xl"
         />
       </div>
     </div>
 
     {/* COLUMN 3 */}
-    <div className="w-full sm:w-[80%] lg:w-110 flex flex-col gap-5">
+    <div className="w-full lg:w-[32%] flex flex-col gap-5">
       <div className="w-full rounded-2xl">
         <img
           src={client5}
           alt=""
-          className="w-full h-[220px] sm:h-[260px] lg:h-75 object-cover rounded-2xl"
+          className="w-full h-[220px] sm:h-[260px] lg:h-72 object-cover rounded-2xl"
         />
       </div>
 
@@ -849,7 +745,7 @@ const faqs = [
           A growing set of infrastructure features designed for modern,
           scalable businesses.
         </p>
-        <p className="text-[40px] lg:text-[50px] mt-8 lg:mt-13 text-[#312C85] font-semibold">80+</p>
+        <p className="text-[36px] sm:text-[40px] lg:text-[50px] mt-6 lg:mt-10 text-[#312C85] font-semibold">80+</p>
         <p className="text-[14px] text-[#312C85] font-semibold">Core Features</p>
       </div>
     </div>
@@ -860,22 +756,26 @@ const faqs = [
       {/* page seventh */}
 
   <div className="bg-[#E1E8FF] abc overflow-x-hidden">
-  <div
+   <div
     className="
       slide-up
       min-h-[90vh]
       w-full
-      max-w-[1600px]
+      max-w-7xl
       mx-auto
+      flex flex-col
+     
+      
+      gap-8 lg:gap-10
       px-6 sm:px-10 lg:px-12
-      pt-20 lg:pt-24 xl:pt-28
+      pt-16 xl:pt-32 2xl:pt-40
     "
   >
 
     {/* HEADING */}
     <div className="text-center lg:text-left">
-      <p className="text-[14px] sm:text-[16px] text-[#585757] font-semibold">
-        Our Blogs
+      <p className="text-[14px] sm:text-[16px] text-[#616062] font-semibold">
+       Our Blogs
       </p>
 
       <p
@@ -883,6 +783,7 @@ const faqs = [
           text-[28px]
           sm:text-[32px]
           lg:text-[38px]
+          2xl:text-[44px]
           text-[#312C85]
           font-semibold
         "
@@ -908,7 +809,7 @@ const faqs = [
         className="
           group
           w-full
-          max-w-[420px]
+          flex-1
           h-auto
           xl:min-h-[520px]
           bg-white
@@ -957,7 +858,7 @@ const faqs = [
         className="
           group
           w-full
-          max-w-[420px]
+          flex-1
           h-auto
           xl:min-h-[520px]
           bg-white
@@ -1006,7 +907,7 @@ const faqs = [
         className="
           group
           w-full
-          max-w-[420px]
+          flex-1
           h-auto
           xl:min-h-[520px]
           bg-white
@@ -1063,7 +964,7 @@ const faqs = [
       slide-up
       min-h-[90vh]
       w-full
-      max-w-[1600px]
+      max-w-7xl
       mx-auto
       px-6 sm:px-10 lg:px-12
       pt-20 lg:pt-24 xl:pt-10

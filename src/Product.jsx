@@ -91,7 +91,7 @@ const Product = () => {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
-          className="text-4xl md:text-6xl font-bold text-[#312C85] mb-6"
+          className="text-3xl sm:text-4xl md:text-6xl font-bold text-[#312C85] mb-6"
         >
           Everything You Need in <span className='bg-gradient-to-r from-blue-500 to-indigo-500 text-transparent bg-clip-text transition-all duration-500'>One Platform</span>
         </motion.h1>
@@ -107,7 +107,7 @@ const Product = () => {
 
       {/* Services Grid */}
       <section className="max-w-7xl mx-auto px-6 pb-24">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => (
             <motion.div
               key={index}

@@ -295,12 +295,12 @@ useEffect(() => {
     <>
       <ScrollToTop />
     {/* <Header /> */}
-    <div className='bg-[#E3EAFF] abc flex flex-col items-center justify-center'>
+    <div className='bg-[#E3EAFF] abc flex flex-col items-center justify-center overflow-x-hidden'>
 <section className="w-full min-h-[95vh] flex items-center justify-center bg-[#E3EAFF] abc py-12">
-  <div className="text-center max-w-4xl w-full px-4">
+  <div className="text-center max-w-4xl w-full px-4 sm:px-6">
 
     {/* Heading */}
-    <h1 className="text-[42px] sm:text-[52px] md:text-[72px] font-extrabold leading-tight text-[#2d2a7a] text-center 2xl:whitespace-nowrap">
+    <h1 className="text-[32px] sm:text-[42px] md:text-[52px] lg:text-[72px] font-extrabold leading-tight text-[#2d2a7a] text-center">
       Get Started Your{" "}
       <span className="bg-gradient-to-r from-blue-500 to-indigo-500 text-transparent bg-clip-text transition-all duration-500">
         {texts[index]}
@@ -444,8 +444,8 @@ useEffect(() => {
               ignore.com provides domains, hosting, servers, and subscription management — all accessible from one unified dashboard.
             </motion.p>
           </header>
-         <section className="max-w-7xl mx-auto px-6 pb-24">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <section className="max-w-7xl mx-auto px-6 pb-24">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => (
             <motion.div
               key={index}
@@ -459,17 +459,17 @@ useEffect(() => {
           ))}
         </div>
       </section>
-      <a href="/product"> <button className="-mt-5 mb-15 bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-3 px-8 rounded-full transition-all transform hover:scale-105 flex items-center gap-3">
+      <a href="/product"> <button className="-mt-5 mb-10 sm:mb-15 bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-3 px-8 rounded-full transition-all transform hover:scale-105 flex items-center gap-3">
           Know More <TiArrowRight className='text-[30px]'/>
         </button></a> 
-        <div className="text-center max-w-4xl mt-20 mb-10">
-        <span className="text-[#312C85] text-sm font-semibold tracking-wide uppercase  abc border border-[#312C85] w-fit mx-auto py-2 rounded-full px-6">
+        <div className="text-center max-w-4xl mt-20 mb-10 px-4">
+        <span className="text-[#312C85] text-sm font-semibold tracking-wide uppercase abc border border-[#312C85] w-fit mx-auto py-2 rounded-full px-6">
           Features
         </span>
-        <h2 className="text-4xl md:text-6xl font-bold mt-8 mb-6 tracking-tight text-[#312C85] abc leading-tight">
+        <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold mt-8 mb-6 tracking-tight text-[#312C85] abc leading-tight">
           Everything You Need to Power Your <span className="bg-gradient-to-r from-blue-500 to-indigo-500 text-transparent bg-clip-text transition-all duration-500">Online Business</span>
         </h2>
-        <p className="text-[#585765] text-lg leading-relaxed max-w-2xl mx-auto">
+        <p className="text-[#585765] text-base sm:text-lg leading-relaxed max-w-2xl mx-auto">
           Ignorre.com brings domains, hosting, servers, and subscriptions together in one intelligent platform — built for speed, security, and effortless scaling.
         </p>
       </div>
@@ -510,7 +510,7 @@ useEffect(() => {
                 </motion.div>
               ))}
             </motion.div>
-             <a href="/features"> <button className="mt-15 mb-15 bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-3 px-8 rounded-full transition-all transform hover:scale-105 flex items-center gap-3">
+             <a href="/features"> <button className="mt-10 sm:mt-15 mb-10 sm:mb-15 bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-3 px-8 rounded-full transition-all transform hover:scale-105 flex items-center gap-3">
           Explore More <TiArrowRight className='text-[30px]'/>
         </button></a> 
                <div className="min-h-screen bg-[#E5EBFF] text-white py-20 px-4 font-sans selection:bg-blue-500/30 overflow-x-hidden abc">
@@ -523,10 +523,10 @@ useEffect(() => {
                       className="max-w-4xl mx-auto text-center mb-16"
                     >
                       <p className="text-[#312C85] font-medium text-sm mb-4 tracking-wide uppercase border border-[#312C85] w-fit mx-auto py-2 rounded-full px-6">Plans</p>
-                      <h1 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight text-[#312C85]">
-                        Plans Built for Domains,<span className='bg-gradient-to-r from-blue-500 to-indigo-500 text-transparent bg-clip-text transition-all duration-500'> Hosting & Servers</span>
+                      <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 tracking-tight text-[#312C85]">
+                        Plans Built for Domains,<br className="sm:hidden" /><span className='bg-gradient-to-r from-blue-500 to-indigo-500 text-transparent bg-clip-text transition-all duration-500'> Hosting & Servers</span>
                       </h1>
-                      <p className="text-[#585765] text-lg leading-relaxed max-w-2xl mx-auto ">
+                      <p className="text-[#585765] text-base sm:text-lg leading-relaxed max-w-2xl mx-auto ">
                         Whether you're launching your first domain or managing infrastructure at scale, ignore gives you one dashboard for everything. Start free upgrade anytime.
                       </p>
                     </motion.div>
@@ -584,14 +584,14 @@ useEffect(() => {
                       initial="hidden"
                       whileInView="visible"
                       viewport={{ once: true, margin: "-100px" }}
-                      className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 items-stretch"
+                      className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 items-stretch"
                     >
                       {plans.map((plan, idx) => (
                         <motion.div
                           key={idx}
                           variants={itemVariants}
                           whileHover={{ y: -10, transition: { duration: 0.3 } }}
-                          className={`relative flex flex-col p-10 rounded-[2.5rem] transition-all duration-500 border min-h-[780px] ${
+                          className={`relative flex flex-col p-6 sm:p-8 lg:p-10 rounded-[2.5rem] transition-all duration-500 border ${
                             plan.isPopular 
                               ? 'bg-white border-blue-600 shadow-[0_0_40px_-15px_rgba(37,99,235,0.2)]' 
                               : 'bg-white border-gray-100 shadow-sm'
@@ -619,7 +619,7 @@ useEffect(() => {
                                 key={billingCycle}
                                 initial={{ opacity: 0, scale: 0.9 }}
                                 animate={{ opacity: 1, scale: 1 }}
-                                className="text-6xl font-bold text-[#312C85] tracking-tighter inline-block"
+                                className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#312C85] tracking-tighter inline-block"
                               >
                                 ${billingCycle === 'monthly' ? plan.monthly : plan.yearly}
                               </motion.span>
@@ -656,19 +656,19 @@ useEffect(() => {
           Get Your Plan Now <TiArrowRight className='text-[30px]'/>
         </button></a> 
           <div className="max-w-7xl mx-auto px-4 mb-0 text-center z-10">
-        <a href="#" className="text-[#312C85] text-xs font-bold tracking-wider uppercase abc  border border-[#312C85] w-fit mx-auto py-2 rounded-full px-6">
+        <a href="#" className="text-[#312C85] text-xs font-bold tracking-wider uppercase abc border border-[#312C85] w-fit mx-auto py-2 rounded-full px-6">
          Testimonials
         </a>
-        <h2 className="text-5xl md:text-7xl font-bold mt-6 mb-8 tracking-tight text-[#312C85] abc">
+        <h2 className="text-4xl sm:text-5xl md:text-7xl font-bold mt-6 mb-8 tracking-tight text-[#312C85] abc">
           Trusted by <span className="bg-gradient-to-r from-blue-500 to-indigo-500 text-transparent bg-clip-text transition-all duration-500 abc">Thousands</span>
         </h2>
-        <p className="text-[#585765] text-lg md:text-xl max-w-3xl mx-auto leading-relaxed abc">
+        <p className="text-[#585765] text-base sm:text-lg md:text-xl max-w-3xl mx-auto leading-relaxed abc">
           Discover why businesses choose ignorre.com for domains, hosting,
           servers, and subscription management — all from one powerful dashboard.
         </p>
       </div>
     
-  <div className="w-full  py-12 px-4 sm:px-6 lg:px-8">
+  <div className="w-full py-12 px-4 sm:px-6 lg:px-8">
   <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
 
     {testimonials.map((item, index) => (
@@ -740,7 +740,7 @@ useEffect(() => {
 
   </div>
 </div>
- <a href="/testimonial"> <button className="mt-0 mb-15 bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-3 px-8 rounded-full transition-all transform hover:scale-105 flex items-center gap-3">
+ <a href="/testimonial"> <button className="mt-0 mb-10 sm:mb-15 bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-3 px-8 rounded-full transition-all transform hover:scale-105 flex items-center gap-3">
           Read More <TiArrowRight className='text-[30px]'/>
         </button></a> 
         <div className="min-h-screen bg-[#E5EBFF] text-white py-16 px-4 sm:px-6 lg:px-8 font-sans">
@@ -750,10 +750,10 @@ useEffect(() => {
                 <p className="text-[#312C85] font-medium mb-4 text-sm uppercase tracking-wide abc">
                   Customer Support
                 </p>
-                <h1 className="text-3xl md:text-5xl font-bold mb-4 tracking-tight text-[#312C85] abc">
+                <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-4 tracking-tight text-[#312C85] abc">
                   Everything You <span className='bg-gradient-to-r from-blue-500 to-indigo-500 text-transparent bg-clip-text transition-all duration-500'>Need to Know</span>
                 </h1>
-                <p className="text-[#585765] text-base md:text-lg max-w-2xl mx-auto leading-relaxed abc">
+                <p className="text-[#585765] text-sm sm:text-base md:text-lg max-w-2xl mx-auto leading-relaxed abc">
                   Questions about domains, hosting, servers, or managing subscriptions? 
                   Here are the most common answers from Ignorre customers.
                 </p>

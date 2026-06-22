@@ -90,13 +90,13 @@ const PricingPage = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
-        className="max-w-4xl mx-auto text-center mb-16"
+        className="max-w-4xl mx-auto text-center mb-16 px-4"
       >
         <p className="text-[#312C85] font-medium text-sm mb-4 tracking-wide uppercase">Plans</p>
-        <h1 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight text-[#312C85]">
-          Plans Built for Domains,<span className='bg-gradient-to-r from-blue-500 to-indigo-500 text-transparent bg-clip-text transition-all duration-500'> Hosting & Servers</span>
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 tracking-tight text-[#312C85]">
+          Plans Built for Domains,<br className="sm:hidden" /><span className='bg-gradient-to-r from-blue-500 to-indigo-500 text-transparent bg-clip-text transition-all duration-500'> Hosting & Servers</span>
         </h1>
-        <p className="text-[#585765] text-lg leading-relaxed max-w-2xl mx-auto ">
+        <p className="text-[#585765] text-base sm:text-lg leading-relaxed max-w-2xl mx-auto ">
           Whether you're launching your first domain or managing infrastructure at scale, ignore gives you one dashboard for everything. Start free upgrade anytime.
         </p>
       </motion.div>
@@ -154,14 +154,14 @@ const PricingPage = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, margin: "-100px" }}
-        className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 items-stretch"
+        className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 items-stretch"
       >
         {plans.map((plan, idx) => (
           <motion.div
             key={idx}
             variants={itemVariants}
             whileHover={{ y: -10, transition: { duration: 0.3 } }}
-            className={`relative flex flex-col p-10 rounded-[2.5rem] transition-all duration-500 border min-h-[780px] ${
+            className={`relative flex flex-col p-6 sm:p-8 lg:p-10 rounded-[2.5rem] transition-all duration-500 border ${
               plan.isPopular 
                 ? 'bg-white border-blue-600 shadow-[0_0_40px_-15px_rgba(37,99,235,0.2)]' 
                 : 'bg-white border-gray-100 shadow-sm'
@@ -185,14 +185,14 @@ const PricingPage = () => {
               <p className="text-[#585765] text-sm leading-relaxed mb-8">{plan.desc}</p>
               
               <div className="flex items-baseline gap-1">
-                <motion.span 
-                  key={billingCycle}
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  className="text-6xl font-bold text-[#312C85] tracking-tighter inline-block"
-                >
-                  ${billingCycle === 'monthly' ? plan.monthly : plan.yearly}
-                </motion.span>
+                  <motion.span 
+                    key={billingCycle}
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#312C85] tracking-tighter inline-block"
+                  >
+                    ${billingCycle === 'monthly' ? plan.monthly : plan.yearly}
+                  </motion.span>
                 <span className="text-[#949BAD] font-medium text-xl">/{billingCycle === 'monthly' ? 'mon' : 'yr'}</span>
               </div>
             </div>

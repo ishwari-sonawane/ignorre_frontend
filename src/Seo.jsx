@@ -1254,7 +1254,7 @@ const faqs = [
     <img
       src={seo1}
       alt=""
-      className="h-48 sm:h-56 lg:h-50 w-full sm:w-96 md:w-70 md:h-50 lg:w-90 xl:w-120 xl:h-60 rounded-full object-cover ml-15"
+      className="h-48 sm:h-56 lg:h-50 w-full sm:w-96 md:w-70 md:h-50 lg:w-90 xl:w-120 xl:h-60 rounded-full object-cover lg:ml-15"
     />
     <img
       src={seo2}
@@ -1305,7 +1305,7 @@ const faqs = [
     "
   >
     {/* IGNORRE SEO CARD */}
-    <div className="h-auto lg:h-160 xl:h-120 w-full sm:w-[95%] md:w-[520px] lg:w-130 border border-gray-300 rounded-2xl shadow-2xl p-5 lg:p-7 bg-white">
+    <div className="h-auto w-full sm:w-[95%] md:w-[520px] lg:w-[500px] border border-gray-300 rounded-2xl shadow-2xl p-5 lg:p-7 bg-white">
       <p className="text-[22px] lg:text-[24px] text-[#312C85] mb-2 font-bold">
         Ignorre SEO
       </p>
@@ -1313,39 +1313,39 @@ const faqs = [
         All-in-One AI-Powered SEO & Search Intelligence
       </p>
 
-      <div className="flex flex-wrap gap-4 mt-8 lg:mt-10">
-        <button className="text-[15px] lg:text-[16px] font-medium rounded-3xl px-4 py-2 text-white bg-[#287AFF]">
+      <div className="flex flex-wrap gap-3 mt-6 lg:mt-8">
+        <button className="text-[14px] lg:text-[15px] font-medium rounded-3xl px-4 py-2 text-white bg-[#287AFF]">
           AI Keyword Research
         </button>
-        <button className="text-[15px] lg:text-[16px] font-medium rounded-3xl px-4 py-2 text-black bg-[#D6D8E1]">
+        <button className="text-[14px] lg:text-[15px] font-medium rounded-3xl px-4 py-2 text-black bg-[#D6D8E1]">
           SERP & Competitor Analysis
         </button>
-        <button className="text-[15px] lg:text-[16px] font-medium rounded-3xl px-4 py-2 text-white bg-black">
+        <button className="text-[14px] lg:text-[15px] font-medium rounded-3xl px-4 py-2 text-white bg-black">
           Real-Time Ranking Tracking
         </button>
-        <button className="text-[15px] lg:text-[16px] font-medium rounded-3xl px-4 py-2 text-white bg-[#287AFF]">
+        <button className="text-[14px] lg:text-[15px] font-medium rounded-3xl px-4 py-2 text-white bg-[#287AFF]">
           Search Intent Analysis
         </button>
-        <button className="text-[15px] lg:text-[16px] font-medium rounded-3xl px-4 py-2 text-white bg-[#287AFF]">
+        <button className="text-[14px] lg:text-[15px] font-medium rounded-3xl px-4 py-2 text-white bg-[#287AFF]">
           Content Optimization for SEO
         </button>
-        <button className="text-[15px] lg:text-[16px] font-medium rounded-3xl px-4 py-2 text-black bg-[#D6D8E1]">
+        <button className="text-[14px] lg:text-[15px] font-medium rounded-3xl px-4 py-2 text-black bg-[#D6D8E1]">
           Unified SEO Dashboard
         </button>
-        <button className="text-[15px] lg:text-[16px] font-medium rounded-3xl px-4 py-2 text-black bg-[#D6D8E1]">
+        <button className="text-[14px] lg:text-[15px] font-medium rounded-3xl px-4 py-2 text-black bg-[#D6D8E1]">
           Trend-Based Search Updates
         </button>
-        <button className="text-[15px] lg:text-[16px] font-medium rounded-3xl px-4 py-2 text-white bg-black">
+        <button className="text-[14px] lg:text-[15px] font-medium rounded-3xl px-4 py-2 text-white bg-black">
           Flexible Pricing
         </button>
-        <button className="text-[15px] lg:text-[16px] font-medium rounded-3xl px-4 py-2 text-white bg-[#287AFF]">
+        <button className="text-[14px] lg:text-[15px] font-medium rounded-3xl px-4 py-2 text-white bg-[#287AFF]">
           Team Collaboration
         </button>
       </div>
     </div>
 
     {/* TRADITIONAL SEO CARD */}
-    <div className="h-auto lg:h-160 xl:h-120 w-full sm:w-[95%] md:w-[520px] lg:w-130 border border-gray-300 rounded-2xl shadow-2xl p-5 lg:p-7 bg-white">
+    <div className="h-auto w-full sm:w-[95%] md:w-[520px] lg:w-[500px] border border-gray-300 rounded-2xl shadow-2xl p-5 lg:p-7 bg-white">
       <p className="text-[22px] lg:text-[24px] text-[#312C85] mb-2 font-bold">
         Traditional SEO Tools
       </p>
@@ -1353,32 +1353,32 @@ const faqs = [
         Multiple Tools for SEO & Analytics
       </p>
 
-      <div className="flex flex-wrap gap-4 mt-8 lg:mt-10 ">
-        <button className="text-[15px] lg:text-[16px] font-medium rounded-3xl px-4 py-2 text-black bg-[#D6D8E1]">
+      <div className="flex flex-wrap gap-3 mt-6 lg:mt-8">
+        <button className="text-[14px] lg:text-[15px] font-medium rounded-3xl px-4 py-2 text-black bg-[#D6D8E1]">
           Require multiple tools for SEO
         </button>
-        <button className="text-[15px] lg:text-[16px] font-medium rounded-3xl px-4 py-2 text-black bg-[#D6D8E1]">
+        <button className="text-[14px] lg:text-[15px] font-medium rounded-3xl px-4 py-2 text-black bg-[#D6D8E1]">
           Slow or delayed data
         </button>
-        <button className="text-[15px] lg:text-[16px] font-medium rounded-3xl px-4 py-2 text-black bg-[#D6D8E1]">
+        <button className="text-[14px] lg:text-[15px] font-medium rounded-3xl px-4 py-2 text-black bg-[#D6D8E1]">
           Limited AI insights
         </button>
-        <button className="text-[15px] lg:text-[16px] font-medium rounded-3xl px-4 py-2 text-black bg-[#D6D8E1]">
+        <button className="text-[14px] lg:text-[15px] font-medium rounded-3xl px-4 py-2 text-black bg-[#D6D8E1]">
           Manual keyword research
         </button>
-        <button className="text-[15px] lg:text-[16px] font-medium rounded-3xl px-4 py-2 text-black bg-[#D6D8E1]">
+        <button className="text-[14px] lg:text-[15px] font-medium rounded-3xl px-4 py-2 text-black bg-[#D6D8E1]">
           Fragmented SEO workflows
         </button>
-        <button className="text-[15px] lg:text-[16px] font-medium rounded-3xl px-4 py-2 text-black bg-[#D6D8E1]">
+        <button className="text-[14px] lg:text-[15px] font-medium rounded-3xl px-4 py-2 text-black bg-[#D6D8E1]">
           Limited collaboration
         </button>
-        <button className="text-[15px] lg:text-[16px] font-medium rounded-3xl px-4 py-2 text-black bg-[#D6D8E1]">
+        <button className="text-[14px] lg:text-[15px] font-medium rounded-3xl px-4 py-2 text-black bg-[#D6D8E1]">
           Extra fees for scaling
         </button>
-        <button className="text-[15px] lg:text-[16px] font-medium rounded-3xl px-4 py-2 text-black bg-[#D6D8E1]">
+        <button className="text-[14px] lg:text-[15px] font-medium rounded-3xl px-4 py-2 text-black bg-[#D6D8E1]">
           Complex & clunky interfaces
         </button>
-        <button className="text-[15px] lg:text-[16px] font-medium rounded-3xl px-4 py-2 text-black bg-[#D6D8E1]">
+        <button className="text-[14px] lg:text-[15px] font-medium rounded-3xl px-4 py-2 text-black bg-[#D6D8E1]">
           No unified search intelligence
         </button>
       </div>

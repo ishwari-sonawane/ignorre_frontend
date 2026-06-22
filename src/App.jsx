@@ -17,7 +17,7 @@ import Footer from "./Footer.jsx";
 
 function App() {
   return (
- <>
+ <div className="overflow-x-hidden">
   <Header />
 
   <Routes>
@@ -34,7 +34,7 @@ function App() {
     <Route path="/faq" element={<Faq />} />
     <Route path="/contact" element={<Contact />} />
   </Routes>
-</>
+</div>
   )
 }
 
