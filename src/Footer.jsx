@@ -1,6 +1,7 @@
 import React from 'react'
 import { RiArrowRightUpLine } from "react-icons/ri";
 import logowhite from "./assets/logowhite.png";
+import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <>
@@ -95,12 +96,12 @@ const Footer = () => {
         <div className="flex flex-col sm:flex-row gap-8 lg:gap-0 lg:w-1/2 flex-wrap">
           <div className="w-full sm:w-auto sm:flex-1 flex flex-col items-center lg:items-center gap-3">
           <p className="text-[18px] font-semibold mb-2">Product</p>
-         <a href="/domain"> <p className="hover:underline cursor-pointer">Domains</p></a>
-         <a href="/dns"> <p className="hover:underline cursor-pointer">DNS</p></a>
-          <a href="/email"><p className="hover:underline cursor-pointer">Email </p></a>
-          <a href="/seo"><p className="hover:underline cursor-pointer">SEO Tools</p></a>
-          <a href="/ai"><p className="hover:underline cursor-pointer">AI Services</p></a>
-          <a href="#"><p className="hover:underline cursor-pointer">VPS Hosting</p></a>
+         <Link to="/domain"><p className="hover:underline cursor-pointer">Domains</p></Link>
+         <Link to="/dns"> <p className="hover:underline cursor-pointer">DNS</p></Link>
+          <Link to="/email"><p className="hover:underline cursor-pointer">Email </p></Link>
+          <Link to="/seo"><p className="hover:underline cursor-pointer">SEO Tools</p></Link>
+          <Link to="/ai"><p className="hover:underline cursor-pointer">AI Services</p></Link>
+          <Link to="#"><p className="hover:underline cursor-pointer">VPS Hosting</p></Link>
         </div>
 
         <div className="block sm:hidden h-[1px] w-full bg-gray-600 my-2"></div>
@@ -110,8 +111,8 @@ const Footer = () => {
         {/* COMPANY */}
         <div className="w-full sm:w-auto sm:flex-1 flex flex-col items-center lg:items-center gap-3">
           <p className="text-[18px] font-semibold mb-2">Company</p>
-        <a href="/"><p className="hover:underline cursor-pointer">Home</p></a>
-         <a href="/contact"> <p className="hover:underline cursor-pointer">Contact</p></a>
+        <Link to="/"><p className="hover:underline cursor-pointer">Home</p></Link>
+         <Link to="/contact"> <p className="hover:underline cursor-pointer">Contact</p></Link>
         </div>
 
         <div className="block sm:hidden h-[1px] w-full bg-gray-600 my-2"></div>
@@ -121,7 +122,7 @@ const Footer = () => {
         {/* UTILITIES */}
         <div className="w-full sm:w-auto sm:flex-1 flex flex-col items-center lg:items-center gap-3">
           <p className="text-[18px] font-semibold mb-2">Support</p>
-          <a href="/faq"><p className="hover:underline cursor-pointer">FAQ</p></a>
+          <Link to="/faq"><p className="hover:underline cursor-pointer">FAQ</p></Link>
         </div>
         
         </div>
